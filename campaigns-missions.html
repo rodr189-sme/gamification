@@ -46,17 +46,16 @@
 
 
 
-
 	<section class='main'>
 		<div class="container">
 			<div class='row'>
 				<div class="col-lg-12 bd-content">
 					<h1 class='d-inline'>Campaign name</h1>
 					<div class='d-inline'>
-					<label class="switch">
-						<input type="checkbox">
-						<span class="slider round"></span>
-					</label>
+						<label class="switch">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
 					</div>
 				</div>
 			</div>
@@ -71,10 +70,10 @@
 							<a class="nav-link" href="campaigns-content.html">Content</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="campaigns-layout.html">Layout</a>
+							<a class="nav-link" href="campaigns-layout.html">Layout</a>
 						</li>
-												<li class="nav-item">
-							<a class="nav-link" href="campaigns-missions.html">Missions</a>
+						<li class="nav-item">
+							<a class="nav-link active" href="campaigns-missions.html">Missions</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="campaigns-users.html">Users</a>
@@ -83,37 +82,80 @@
 				</div>
 			</div>
 
+			<div class='row'>
+				<div class="col-lg-12">
+					<a href="mission.html"><button type="button" class="btn btn-primary">New</button></a>
+				</div>
+			</div>
 
 			<div class='row'>
 				<div class="col-lg-12">
-					<form>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Font Color</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Navbar Color</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>	
-						<div class="form-group">
-							<label for="exampleInputEmail1">Background color</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-							<small id="emailHelp" class="form-text text-muted">Use multiple comma separated colors for gradient.</small>
-						</div>	
-						<div class="form-group">
-							<label for="exampleInputEmail1">Logo</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>	
-						<div class="form-group">
-							<label for="exampleInputEmail1">Header image</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>	
-						<div class="form-group">
-							<label for="exampleInputEmail1">Facebook share image</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>	
-						<button type="submit" class="btn btn-primary">Save</button>
-					</form>
+
+					<table class="table">
+						<thead>
+							<tr class='borderless'>
+								<th scope="col">#</th>
+								<th scope="col">Badge</th>
+								<th scope="col">Type</th>
+								<th scope="col">Start date</th>
+								<th scope="col">Points</th>
+								<th scope="col">Status</th>
+								<th scope="col"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>2122</td>
+								<td>2122</td>
+								<td>2122</td>
+								<td><span class="badge badge-pill badge-primary">Active</span></td>
+								<td><a href="mission.html"><button type="button" class="btn btn-primary btn-sm">View</button></a></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>4565</td>
+								<td>2122</td>
+								<td>2122</td>
+								<td><span class="badge badge-pill badge-secondary">Inactive</span></td>
+								<td><a href="mission.html"><button type="button" class="btn btn-primary btn-sm">View</button></a></td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Larry</td>
+								<td>67897</td>
+								<td>2122</td>
+								<td>2122</td>
+								<td><span class="badge badge-pill badge-primary">Active</span></td>
+								<td><a href="mission.html"><button type="button" class="btn btn-primary btn-sm">View</button></a></td>
+							</tr>
+						</tbody>
+					</table>
+
+
+
+				</div>
+			</div>
+
+						<div class='row'>
+				<div class='col-lg-12'>
+					<nav aria-label="...">
+						<ul class="pagination justify-content-center">
+							<li class="page-item disabled">
+								<a class="page-link" href="#" tabindex="-1">Previous</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item active">
+								<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">Next</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>

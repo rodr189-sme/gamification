@@ -12,6 +12,11 @@ footer {
 	margin-bottom: 6em;
 }
 
+.borderless td, .borderless th {
+    border: none;
+}
+
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;

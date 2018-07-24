@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 
 
-	<title>Votação - Nome do campanha</title>
+	<title>Gamification | Campaigns</title>
 </head>
 <body>
 
@@ -19,19 +19,26 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
 				<li class="nav-item active">
 					<a class="nav-link small" href="index.html">Campaigns</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link small" href="#">Missions</a>
+					<a class="nav-link small" href="badges.html">Badges</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link small" href="#">Badges</a>
+					<a class="nav-link small" href="accounts.html">Accounts</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav my-2 my-lg-0">
+
+				<li class="nav-item">
+					<a class="nav-link small" href="profile.html">Profile</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link small" href="#">Accounts</a>
+					<a class="nav-link small" href="#">Logout</a>
 				</li>
 			</ul>
 		</div>
@@ -59,6 +66,7 @@
 								<th scope="col">#</th>
 								<th scope="col">Name</th>
 								<th scope="col">Users</th>
+								<th scope="col">Status</th>
 								<th scope="col"></th>
 							</tr>
 						</thead>
@@ -67,18 +75,21 @@
 								<th scope="row">1</th>
 								<td>Mark</td>
 								<td>2122</td>
+								<td><span class="badge badge-pill badge-primary">Active</span></td>
 								<td><a href="campaigns.html"><button type="button" class="btn btn-primary btn-sm">View</button></a></td>
 							</tr>
 							<tr>
 								<th scope="row">2</th>
 								<td>Jacob</td>
 								<td>4565</td>
+								<td><span class="badge badge-pill badge-primary">Active</span></td>
 								<td><a href="campaigns.html"><button type="button" class="btn btn-primary btn-sm">View</button></a></td>
 							</tr>
 							<tr>
 								<th scope="row">3</th>
 								<td>Larry</td>
 								<td>67897</td>
+								<td><span class="badge badge-pill badge-primary">Active</span></td>
 								<td><a href="campaigns.html"><button type="button" class="btn btn-primary btn-sm">View</button></a></td>
 							</tr>
 						</tbody>
@@ -86,10 +97,31 @@
 
 				</div>
 			</div>
+
+			<div class='row'>
+				<div class='col-lg-12'>
+					<nav aria-label="...">
+						<ul class="pagination justify-content-center">
+							<li class="page-item disabled">
+								<a class="page-link" href="#" tabindex="-1">Previous</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item active">
+								<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">Next</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
 		</div>
 	</section>
 
-	
+	<footer></footer>
 
 
 
