@@ -79,75 +79,90 @@
 						<div class="form-group">
 							<label>Points</label>
 							<input type="number" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">How many points player will earn if complete the mission.</small>
+							<small class="form-text text-muted">How many points player will earn if complete the mission.</small>
 						</div>
 						<div class="form-group">
 							<label>Times</label>
-							<input type="number" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">How many times player have to do the mission to complete it.</small>
+							<input type="time" class="form-control">
+							<small class="form-text text-muted">How many times player have to do the mission to complete it.</small>
 						</div>	
 						<div class="form-group">
 							<label>Badge</label>
-							<input type="email" class="form-control">
+							<select class="form-control">
+								<option>Badge 1</option>
+								<option>Badge 2</option>
+								<option>Badge 3</option>
+								<option>Badge 4</option>
+								<option>Badge 5</option>
+							</select>
 						</div>
 
-  <div class="form-group">
-    <label>Type</label>
-    <select class="form-control">
-      <option>Question</option>
-      <option>View on YouTube</option>
-      <option>Subscription on YouTube</option>
-      <option>Follow/Save on Spotify</option>
-      <option>Streaming on Spotify</option>
-    </select>
-  </div>
 
-
-						<h2 class='d-inline'>View on YouTube</h2>
-						<hr>
 						<div class="form-group">
-							<label>YouTube Url</label>
-							<input type="text" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">Example: https://www.youtube.com/watch?v=kbMqWXnpXcA</small>
+							<label>Type</label>
+							<select class="form-control" id='missionType'>
+								<option value='1'>Question</option>
+								<option value='2'>View on YouTube</option>
+								<option value='3'>Subscription on YouTube</option>
+								<option value='4'>Follow/Save on Spotify</option>
+								<option value='5'>Streaming on Spotify</option>
+							</select>
 						</div>
-						<div class="form-group">
-							<label>Watch time</label>
-							<input type="number" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">How long (in seconds) player have to watch the video to complete the mission.</small>
-						</div>
-						<h2 class='d-inline'>Question</h2>
-						<small id="emailHelp" class="form-text text-muted">Use the description field as the question.</small>
-						<hr>
-						<div class="form-group">
-							<label>Aswer</label>
-							<input type="text" class="form-control">
-						</div>		
-						<h2 class='d-inline'>Follow/Save on Spotify</h2>
-						<hr>
-						<div class="form-group">
-							<label>Spotify url</label>
-							<input type="text" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">Follow artist: https://open.spotify.com/artist/06cd30Cv9US973Ika84gDw?si=pC57t3DLTkmQb33WZGa3zw<br>Save Album: https://open.spotify.com/album/4WT9D5DV3cykixlcqCLvH2?si=FcVp3LmzRACQrl-xqmnIYg<br> Follow playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX4sX1GnSxmlr?si=XiCb332aQcuVtT7p0dW1Aw</small>
-						</div>	
-						<h2 class='d-inline'>Streaming on Spotify</h2>
-						<hr>
-						<div class="form-group">
-							<label>Spotify url</label>
-							<input type="text" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">Music url: https://open.spotify.com/track/7JK4lTupbBfuJIhnRzURzn?si=o2hDPpIBQZKEZaPwIcIPpQ</small>
-						</div>
-						<div class="form-group">
-							<label>Listen time</label>
-							<input type="number" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">How long (in seconds) player have to listen to the music to complete the mission.</small>
-						</div>
-						<h2 class='d-inline'>Subscription on YouTube</h2>
-						<hr>
-						<div class="form-group">
-							<label>Channel url</label>
-							<input type="text" class="form-control">
-							<small id="emailHelp" class="form-text text-muted">Channel url: https://www.youtube.com/channel/UCuHzBCaKmtaLcRAOoazhCPA</small>
-						</div>		
+						<span id='viewSection' style="display: none">
+							<h2 class='d-inline'>View on YouTube</h2>
+							<hr>
+							<div class="form-group">
+								<label>YouTube Url</label>
+								<input type="url" class="form-control">
+								<small class="form-text text-muted">Example: https://www.youtube.com/watch?v=kbMqWXnpXcA</small>
+							</div>
+							<div class="form-group">
+								<label>Watch time</label>
+								<input type="time" class="form-control">
+								<small class="form-text text-muted">How long player have to watch the video to complete the mission.</small>
+							</div>
+						</span>
+						<span id='questionSection' style="display: none">
+							<h2 class='d-inline'>Question</h2>
+							<small class="form-text text-muted">Use the description field as the question.</small>
+							<hr>
+							<div class="form-group">
+								<label>Answer</label>
+								<input type="text" class="form-control">
+							</div>
+						</span>
+						<span id='followSection' style="display: none">		
+							<h2 class='d-inline'>Follow/Save on Spotify</h2>
+							<hr>
+							<div class="form-group">
+								<label>Spotify url</label>
+								<input type="url" class="form-control">
+								<small class="form-text text-muted">Follow artist: https://open.spotify.com/artist/06cd30Cv9US973Ika84gDw?si=pC57t3DLTkmQb33WZGa3zw<br>Save Album: https://open.spotify.com/album/4WT9D5DV3cykixlcqCLvH2?si=FcVp3LmzRACQrl-xqmnIYg<br> Follow playlist: https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX4sX1GnSxmlr?si=XiCb332aQcuVtT7p0dW1Aw</small>
+							</div>
+						</span>
+						<span id='streamSection' style="display: none">
+							<h2 class='d-inline'>Streaming on Spotify</h2>
+							<hr>
+							<div class="form-group">
+								<label>Spotify url</label>
+								<input type="url" class="form-control">
+								<small class="form-text text-muted">Music url: https://open.spotify.com/track/7JK4lTupbBfuJIhnRzURzn?si=o2hDPpIBQZKEZaPwIcIPpQ</small>
+							</div>
+							<div class="form-group">
+								<label>Listen time</label>
+								<input type="time" class="form-control">
+								<small class="form-text text-muted">How long player have to listen to the music to complete the mission.</small>
+							</div>
+						</span>
+						<span id='subscriptionSection' style="display: none">
+							<h2 class='d-inline'>Subscription on YouTube</h2>
+							<hr>
+							<div class="form-group">
+								<label>Channel url</label>
+								<input type="url" class="form-control">
+								<small class="form-text text-muted">Channel url: https://www.youtube.com/channel/UCuHzBCaKmtaLcRAOoazhCPA</small>
+							</div>
+						</span>		
 						<button type="submit" class="btn btn-primary">Save</button>
 						<a href="campaigns-missions.html"><button type="button" class="btn btn-secondary">Back</button></a>
 					</form>
